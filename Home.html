@@ -1,85 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1">
-        <title>Desmond Chen</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desmond Chen</title>
 
-        <link href="css/main.css" rel="stylesheet">
-        <!-- <link rel="icon" type="image/x-icon" href="css/imgs/favicon.svg"> -->
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div>
-                    <a>DESMOND CHEN</a>
-                    <span></span>
-                    <p class="sub-name">Product Designer in Vancouver BC</p>
-                </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-                <div>
-                    <!-- <a>Work</a> -->
-                    <a>About</a>
-                    <button>Resume</button>
-                </div>
-            </nav>
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <link rel="icon" type="image/x-icon" href="css/imgs/favicon.svg"> -->
+</head>
 
-            <div>
-                <img>
-                <h1>A maker at heart,<br>This is my journey into design.</h1>
-            </div>
-        </header>
+<body>
+    <header>
+        <nav>
+            <a href="./Home.html" class="nameFlex">
+                <p class="titleName">DESMOND CHEN</p>
+                <p class="subTitle">Product Designer in Vancouver BC</p>
+            </a>
 
-        <main>
-            <section>
-                <h2>Featured Projects</h2>
-                <a>
-                    <img>
-                    <div>
-                        <h3>ALBERT SHEATH</h3>
-                        <span></span>
-                        <div>
-                            <p>Material Research & Fabrication Techniques | 2025</p>
-                            <p>Personal Project</p>
-                        </div>
-                    </div>
-                </a>
-
-            </section>
-
-
-
-        </main>
-
-        <footer>
-            <p>(CONTACT)</p>
-            <p>INTERESTED IN WORKING TOGETHER?<br>SEND ME A MESSAGE</p>
-            <!-- Insert Arrow -->
-            <span></span>
-            <div> <!--Insert 7 by grid-->
-              <p>EXTRAS</p>
-              <div>
-                <a>desmchen@telus.net</a>
-                <a>Linkedin</a>
+            <div class="navLinks">
+                <!-- <a>Work</a> -->
+                <a href = "About.html">About</a>
                 <a>Resume</a>
-              </div>
-              <div>
-                <p>Pages</p>
-                <a>Home</a>
-                <a>Works</a>
-                <a>About</a>
-                <a>Contacts</a>
-              </div>
-              <div>
-                <p>Designed by DC</p>
-                <p>Last Updated: 2025</p>
-              </div>
             </div>
-        </footer>
+        </nav>
 
-    </body>
+
+    </header>
+
+    <main>
+        <section class="homeSection">
+            <div class="homeImage">
+                <img src="img/" height="615" width="1475">
+                <div class="homeHeader">
+                    <h1>A maker at heart,</h1>
+                    <h1>This is my journey into design.</h1>
+                </div>
+            </div>
+        </section>
+
+
+        </div>
+
+        <section class="homeSection">
+            <h2 class="featureHeader">Featured Projects</h2>
+            <a href = "Albert.Html" class="featureProject">
+                <img alt = "Plastic grocery bag to sword sheath conversion Project" src="css/img/AlbertFeature.avif" height="615" width="1475">
+                <div class="featureContent">
+                    <h3>ALBERT SHEATH</h3>
+                    <hr>
+                    <div class="projectDetails">
+                        <p>Material Research & Fabrication Techniques | 2025</p>
+                        <p class="projectType">Personal Project</p>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>(CONTACT)</p>
+        <p>INTERESTED IN WORKING TOGETHER?<br>SEND ME A MESSAGE</p>
+        <!-- Insert Arrow -->
+        <hr>
+        <div class="footerGrid"> <!--Insert 7 by grid-->
+            <p class="footerTitles">EXTRAS</p>
+            <div class="contacts">
+                <p class="footerTitles">Buisness</p>
+                <div class="footerFlex">
+                    <a>email</a>
+                    <a>Linkedin</a>
+                    <a>Resume</a>
+                </div>
+            </div>
+            <div>
+                <p class="footerTitles">Pages</p>
+                <div class="footerFlex">
+                    <a>Home</a>
+                    <a>Works</a>
+                    <a>About</a>
+                    <a>Contacts</a>
+                </div>
+            </div>
+            <div>
+                <p class="footerTitles">Credits</p>
+                <div class="footerFlex">
+                    <p>Designed by DC</p>
+                    <p>Last Updated: 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
 
 </html>
