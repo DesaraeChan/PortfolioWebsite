@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: "Aeonik";
     src: url("fonts/Aeonik-Regular.woff") format("woff"), url("fonts/Aeonik-Regular.woff2") format("woff2");
     font-style: normal;
@@ -6,7 +6,7 @@
     font-display: swap;
 }
 
-@font-face{
+@font-face {
     font-family: "Aeonik";
     src: url("fonts/Aeonik-Medium.woff") format("woff"), url("fonts/Aeonik-Medium.woff2") format("woff2");
     font-style: normal;
@@ -14,48 +14,49 @@
     font-display: swap;
 }
 
-@font-face{
+@font-face {
     font-family: "Aeonik";
-     src: url("fonts/Aeonik-Bold.woff") format("woff"), url("fonts/Aeonik-Bold.woff2") format("woff2");
+    src: url("fonts/Aeonik-Bold.woff") format("woff"), url("fonts/Aeonik-Bold.woff2") format("woff2");
     font-style: normal;
     font-weight: 700;
     font-display: swap;
 }
 
-@font-face{
+@font-face {
     font-family: "Aeonik";
-     src: url("fonts/Aeonik-MediumItalic.woff") format("woff"), url("fonts/Aeonik-MediumItalic.woff2") format("woff2");
+    src: url("fonts/Aeonik-MediumItalic.woff") format("woff"), url("fonts/Aeonik-MediumItalic.woff2") format("woff2");
     font-style: italic;
     font-weight: 500;
     font-display: swap;
 }
 
-@font-face{
+@font-face {
     font-family: "Aeonik";
-     src: url("fonts/Aeonik-Light.woff") format("woff"), url("fonts/Aeonik-Light.woff2") format("woff2");
+    src: url("fonts/Aeonik-Light.woff") format("woff"), url("fonts/Aeonik-Light.woff2") format("woff2");
     font-style: normal;
     font-weight: 300;
     font-display: swap;
 }
 
-@font-face{
+@font-face {
     font-family: "Aeonik";
-     src: url("fonts/Aeonik-LightItalic.woff") format("woff"), url("fonts/Aeonik-LightItalic.woff2") format("woff2");
+    src: url("fonts/Aeonik-LightItalic.woff") format("woff"), url("fonts/Aeonik-LightItalic.woff2") format("woff2");
     font-style: italic;
     font-weight: 300;
     font-display: swap;
 }
 
-@font-face{
+@font-face {
     font-family: "Aeonik";
-     src: url("fonts/Aeonik-BoldItalic.woff") format("woff"), url("fonts/Aeonik-BoldItalic.woff2") format("woff2");
+    src: url("fonts/Aeonik-BoldItalic.woff") format("woff"), url("fonts/Aeonik-BoldItalic.woff2") format("woff2");
     font-style: italic;
     font-weight: 700;
     font-display: swap;
 }
-@font-face{
+
+@font-face {
     font-family: "Aeonik";
-     src: url("fonts/Aeonik-RegularItalic.woff") format("woff"), url("fonts/Aeonik-RegularItalic.woff2") format("woff2");
+    src: url("fonts/Aeonik-RegularItalic.woff") format("woff"), url("fonts/Aeonik-RegularItalic.woff2") format("woff2");
     font-style: italic;
     font-weight: 400;
     font-display: swap;
@@ -71,56 +72,61 @@
 }
 
 
-*{
-  box-sizing: border-box;
-  
+* {
+    box-sizing: border-box;
+
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.homeSection, .aboutSection{
+.homeSection,
+.aboutSection {
     margin-left: 3rem;
     margin-right: 3rem;
     border-style: none none solid none;
+    border-width: 2px;
     padding-bottom: 2rem;
     margin-bottom: 0;
 }
 
+#antiPadding {
+    padding-bottom: 0;
+}
 
-p{
+p {
     font-family: "Aeonik";
     font-size: 1rem;
-    margin:0;
+    margin: 0;
     padding: 0;
     line-height: 1.5;
 }
 
-h1{
+h1 {
     font-family: "Aeonik";
     font-size: 3rem;
 }
 
-h2{
+h2 {
     font-family: "Aeonik";
-    font-size:2rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
-h3{
+h3 {
     font-family: "Aeonik";
     padding-top: 0;
     margin-top: 0;
 }
 
-figure{
-    margin-right: 0;
-    margin-top: 0;
+figure {
+    padding: 0;
+    margin: 0;
 }
 
-figcaption{
+figcaption {
     font-family: "Aeonik";
     line-height: 1.5;
     font-size: 1rem;
@@ -128,7 +134,7 @@ figcaption{
 
 
 
-nav{
+nav {
     margin-right: 3rem;
     margin-left: 3rem;
     border-style: none none solid none;
@@ -136,125 +142,134 @@ nav{
     align-items: baseline;
     margin-top: 2rem;
     padding-bottom: 1.25rem;
-    
+    border-width: 2px;
+
 }
 
 
-.nameFlex{
+.nameFlex {
     display: flex;
     gap: 1rem;
     align-items: baseline;
     text-decoration: none;
     color: black;
-    
+
 }
 
-.titleName{
+.titleName {
     font-weight: 500;
     font-size: 2rem;
     border-style: none solid none none;
+    border-width: 2px;
     padding-right: 1rem
-    
 }
 
-.subTitle{
+.subTitle {
     font-weight: 400;
 }
 
-.navLinks{
+.navLinks {
     font-family: "Aeonik";
     margin-left: auto;
     display: flex;
     gap: 2rem;
-    
+
 }
-.navLinks a{
+
+.navLinks a {
     text-decoration: none;
     color: black;
 }
 
-.homeImage{
-    position:relative;
-    height: 70vh;
-    max-width: auto;
+.homeImage {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
 }
 
 .homeImage img {
-    width: auto;
-    height: 70vh;
-    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.homeHeader{
-    position:absolute;
-    bottom:0;
+.homeHeader {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
 }
 
-.homeHeader h1{
-   font-family: "Aeonik";
-   font-weight: 400;
-   font-size: 3.75rem;
-   padding: 0;
-   margin: 0rem;
+.homeHeader h1 {
+    font-family: "Aeonik";
+    color: white;
+    font-weight: 400;
+    font-size: 3.75rem;
+    padding: 0;
+    margin: 0rem;
 }
 
-.featureHeader{
+.featureHeader {
     text-align: center;
     margin-bottom: 4rem;
     margin-top: 4rem;
     font-size: 2.75rem;
 }
 
-.featureProject{
+.featureProject {
     display: block;
-    position: relative; 
+    position: relative;
     text-decoration: none;
     color: white;
-    width:80%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
-.featureProject img{
+.featureProject img {
     max-width: 100%;
     object-fit: cover;
-    height:auto;
-    
+    height: auto;
+
 }
 
 
-.featureContent{
+.featureContent {
     position: absolute;
     bottom: 0;
     right: 0;
-    left:0;
+    left: 0;
     color: white;
     margin-left: 4rem;
     margin-right: 4rem;
     margin-bottom: 2rem;
 }
 
-.featureContent hr{
+.featureContent hr {
     color: white;
 }
 
-.featureContent h3{
+hr {
+    stroke-width: 1px;
+}
+
+.featureContent h3 {
     font-size: 1.5rem;
     font-family: "Aeonik";
     font-weight: 700;
 }
 
-.projectDetails{
+.projectDetails {
     display: flex;
     font-family: "Aeonik";
 }
 
-.projectType{
+.projectType {
     margin-left: auto;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     padding-bottom: 5rem;
@@ -267,7 +282,8 @@ footer{
     margin-right: 4rem;
 }
 
-.footerContactHeader, .footerContactLink{
+.footerContactHeader,
+.footerContactLink {
     font-size: 3rem;
     padding: 0;
     line-height: 1.2;
@@ -276,13 +292,13 @@ footer{
     margin: 0;
 }
 
-.footerContactLink{
+.footerContactLink {
     display: block;
     text-align: center;
 }
 
 
-.footerGrid{
+.footerGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -291,145 +307,211 @@ footer{
     margin-right: 4rem;
 }
 
-.contacts{
+.contacts {
     grid-column-start: 4;
 }
 
-.footerTitles{
+.footerTitles {
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
 
-.footerFlex{
+.footerFlex {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
-.footerFlex p{
-    margin:0;
-    padding:0;    
+
+.footerFlex p {
+    margin: 0;
+    padding: 0;
 }
 
 /* about Section */
 
-.aboutContentPush{
+.aboutContentPush {
     margin-left: 5rem;
     margin-right: 5rem;
 }
 
-.aboutText{
-    
+.aboutText {
+
     margin-top: 3rem;
     margin-bottom: 3rem;
     display: flex;
     gap: 5rem;
 }
 
-.aboutText img{
+.aboutText img {
     max-width: 25rem;
     height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
-.aboutHeader{
+.aboutText div {
+    min-width: 20rem;
+    flex: 1;
+}
+
+.aboutHeader {
     margin-bottom: 2rem;
     margin-top: 0.5rem;
     font-weight: 400;
     font-size: 2.5rem;
-    
+
 }
 
-.aboutContent{
+.aboutFlex {
+    display: flex;
+    gap: 4.5rem;
+}
+
+.aboutFlex h2 {
+    max-width: 25rem;
+    flex-shrink: 1;
+}
+
+.aboutSkills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-style: none none solid none;
+    border-width: 2px;
+
+    padding-bottom: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.aboutSkills p {
+    font-size: 1.5rem;
+}
+
+.aboutSkills img {
+    display: block;
+    margin-left: auto;
+    height: 60%;
+    width: auto;
+}
+
+.aboutInterestDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 20rem;
+    margin-top: 2rem;
+    flex: 1;
+}
+
+.hobbyDiv {
+    margin-bottom: 2rem;
+}
+
+.hobbyDiv p {
+    font-size: 1.2rem;
+}
+
+.hobbyDiv img {
+
+    width: 100%;
+    height: auto;
+}
+
+.aboutContent {
     line-height: 1.5;
 }
 
 /* Case Study */
 
-.caseContainer{
+.caseContainer {
     position: relative;
 }
 
-.caseContainer img{
+.caseContainer img {
     width: 100%;
     height: 45rem;
     object-fit: cover;
     display: block;
 }
 
-.caseTitle{
-    
-    color:white;
+.caseTitle {
+
+    color: white;
     position: absolute;
     bottom: 3rem;
-    left:4rem;
+    left: 4rem;
 
 }
 
-.caseTitle h1{
+.caseTitle h1 {
     font-weight: 400;
     font-size: 5rem;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
-.caseTitle p{
+.caseTitle p {
     font-weight: 300;
     font-size: 2rem;
     max-width: 35rem;
     font-style: italic;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
-.projectSection{
+.projectSection {
     padding-left: 5rem;
     padding-right: 5rem;
     padding-bottom: 3rem;
 }
 
-.grayBG{
+.grayBG {
     background-color: #221f1b;
     color: white;
 }
 
-.lightGrayBG{
+.lightGrayBG {
     background-color: #FAFAFA;
-    padding:3rem;
+    padding: 3rem;
     border-radius: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.descriptionSubhead{
+.descriptionSubhead {
     margin: 0;
-    padding:0;
+    padding: 0;
     padding-top: 3rem;
 
 }
 
-.descriptionRoles{
+.descriptionRoles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+
 }
 
-.descriptionHeader{
+.descriptionHeader {
     margin-top: 0.75rem;
     font-size: 1.5rem;
     margin-bottom: 0;
     font-weight: 700;
 }
 
-.descriptionParagraph{
+.descriptionParagraph {
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-weight: 300;
     line-height: 1.5;
 }
 
-.descriptionHeader, .descriptionParagraph, .descriptionRoles{
+.descriptionHeader,
+.descriptionParagraph,
+.descriptionRoles {
     max-width: 56rem;
 }
 
-.roleTitles{
+.roleTitles {
     font-weight: 700;
     font-size: 1.2rem;
     margin-top: 1rem;
@@ -437,7 +519,7 @@ footer{
 
 }
 
-.explainationHeading{
+.explainationHeading {
     font-family: "Aeonik";
     font-size: 1.8rem;
     font-weight: 400;
@@ -446,35 +528,35 @@ footer{
     margin-bottom: 2rem;
 }
 
-.albertResearchFlex{
+.albertResearchFlex {
     display: flex;
     gap: 3rem;
     margin-top: 4rem;
     margin-bottom: 3rem;
 }
-/* Set flex wrap later */
 
-.albertTassen{
+
+.albertTassen {
     width: 100%;
     height: auto;
 }
 
-.shrink{
+.shrink {
     max-width: 56rem;
 }
 
-.heatingGrid{
+.heatingGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     gap: 2rem;
 }
 
-.heatHeading{
+.heatHeading {
     font-weight: 700;
     font-size: 1.15rem;
 }
 
-.heatTesters{
+.heatTesters {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     width: 100%;
@@ -482,24 +564,24 @@ footer{
     max-height: 25rem;
     max-width: 100%;
     object-fit: contain;
-    
+
 }
 
-.connectionFlex{
+.connectionFlex {
     display: flex;
-    gap:3rem;
+    gap: 3rem;
     padding: 2rem;
     align-items: center;
 }
 
-.connectionImage{
+.connectionImage {
     width: 50%;
     height: auto;
 }
 
 /* https://css-tricks.com/list-style-recipes/ */
 
-.circleList{
+.circleList {
     font-family: "Aeonik";
     font-weight: 700;
     font-size: 1.1rem;
@@ -508,35 +590,35 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap:2rem;
+    gap: 2rem;
     margin-bottom: 2rem;
     padding: 0;
 }
 
-.circleList li{
+.circleList li {
     counter-increment: Counter;
     font-weight: 500;
     display: flex;
     align-items: center;
-    
-    
+
+
 }
 
 .circleList li::before {
-  content: counter(Counter);
-  margin-right: 0.5rem;
-  background: #00BFFF;
-  color: white;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 1rem;
-  display: inline-grid;
-  place-items: center;
-  line-height: 2rem;
-  flex-shrink: 0;
+    content: counter(Counter);
+    margin-right: 0.5rem;
+    background: #00BFFF;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    display: inline-grid;
+    place-items: center;
+    line-height: 2rem;
+    flex-shrink: 0;
 }
 
-.sheathPattern{
+.sheathPattern {
     display: block;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -546,7 +628,7 @@ footer{
     height: auto;
 }
 
-.errorList{
+.errorList {
     font-family: "Aeonik";
     font-weight: 400;
     font-size: 1rem;
@@ -554,22 +636,22 @@ footer{
     counter-reset: Count;
     display: flex;
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
     padding: 0;
 }
 
-.errorList li{
+.errorList li {
     counter-increment: Count;
     font-style: italic;
     font-weight: 400;
     display: flex;
     align-items: center;
-    
+
 }
 
 .errorList li::before {
     content: counter(Count);
-    width: 3rem; 
+    width: 3rem;
     display: inline-block;
     margin-right: 1rem;
     border-right: 2px solid black;
@@ -578,40 +660,41 @@ footer{
     font-size: 3rem;
 }
 
-.errorFlex{
+.errorFlex {
     padding: 2rem;
     padding-top: 1rem;
     display: flex;
-    gap:3rem;
+    gap: 3rem;
     padding-bottom: 4rem;
 }
 
-.errorFlex img{
+.errorFlex img {
     width: 60%;
-    height:auto;
+    height: auto;
 }
 
-.prefabFlex{
+.prefabFlex {
     position: relative;
     display: flex;
     gap: 3rem;
 }
 
-.prefabFig{
+.prefabFig {
+    margin-left: auto;
+    margin-right: 2rem;
     max-width: 35rem;
 }
 
-.prefabFig img{
+.prefabFig img {
     width: 100%;
     height: auto;
 }
 
-.prefabDiff{
-    position: absolute;
-    bottom: 0;
+.prefabDiff {
+    margin-top: 7rem;
 }
 
-.pointHeader{
+.pointHeader {
     font-size: 1.5rem;
     font-family: "Aeonik";
     font-weight: 400;
@@ -619,7 +702,7 @@ footer{
 
 .pointList {
     list-style: none;
-    padding-left: 2.5rem; 
+    padding-left: 2.5rem;
 }
 
 .pointList li {
@@ -628,21 +711,21 @@ footer{
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 2rem;
-    padding-left: 2.4rem; 
+    padding-left: 2.4rem;
 }
 
 .pointList li::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 0.2rem; 
+    top: 0.2rem;
     width: 1.25rem;
     height: 1.25rem;
     background-color: #00BFFF;
     border-radius: 50%;
 }
 
-.assemblyFlex{
+.assemblyFlex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
@@ -650,7 +733,7 @@ footer{
     justify-items: center;
 }
 
-.assemblyCont img{
+.assemblyCont img {
     display: block;
     width: 80%;
     height: auto;
@@ -658,29 +741,236 @@ footer{
     margin-right: auto;
 }
 
-.assemblyCont p{
+.assemblyCont p {
     text-align: center;
 }
 
-.finalHeaderPadding{
+.finalHeaderPadding {
     padding-top: 3rem;
 }
 
-.finalAlbertGrid{
+.finalAlbertGrid {
     width: 100%;
     display: grid;
-     grid-template-columns: ifr 1fr 1fr;
-     grid-template-rows: auto;
-     gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
 }
 
-.finalAlbertGrid img{
+.finalAlbertGrid img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
+
 /* https://www.w3schools.com/cssref/pr_grid-column.php */
-.longFinalAlbert{
+.longFinalAlbert {
     grid-column: 1/4;
+}
+
+@media(width < 74rem) {
+    .errorFlex {
+        flex-direction: column;
+    }
+
+    .errorFlex img {
+        width: 100%;
+        height: auto;
+        order: 1;
+    }
+
+    .errorList {
+        order: 2;
+    }
+
+    .prefabFlex {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .prefabFig {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: none;
+    }
+
+    .prefabDiff {
+        margin-top: 0rem;
+    }
+
+    .shrink {
+        max-width: none;
+    }
+}
+
+@media(width < 66.25rem) {
+    .projectSection {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .aboutContentPush {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .aboutText {
+
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .aboutText img {
+        width: 100%;
+        max-width: 25rem;
+        height: auto;
+        object-fit: contain;
+        flex-shrink: 1;
+    }
+
+    .aboutText div {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .aboutHeader {
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+        font-weight: 400;
+        font-size: 2.5rem;
+
+    }
+
+    .aboutFlex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .aboutFlex h2 {
+        max-width: none;
+    }
+
+    .aboutInterestDiv {
+        margin-top: 0rem;
+        min-width: 0;
+    }
+
+    .lightGrayBG {
+        padding: 2rem;
+    }
+
+    .assemblyFlex {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: baseline;
+        justify-items: baseline;
+
+    }
+
+    .assemblyCont {
+        display: flex;
+    }
+
+    .assemblyCont img {
+        width: 40%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        object-fit: cover;
+    }
+
+    .assemblyCont p {
+        margin: 2rem;
+        text-align: left;
+        width: 50%;
+    }
+
+    .heatingGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .heatP {
+        text-align: center;
+    }
+}
+
+@media(width < 50rem) {
+    .descriptionRoles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .albertResearchFlex {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .connectionFlex {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .connectionImage {
+        width: 100%;
+    }
+
+    .lightGrayBG {
+        padding: 1rem;
+    }
+
+    .circleList {
+        grid-template-columns: 1fr;
+
+    }
+
+    .finalAlbertGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+}
+
+@media(width < 30rem) {
+    .descriptionRoles {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .projectSection {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .caseTitle {
+
+        color: white;
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+
+    }
+
+    .finalAlbertGrid {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
 }
