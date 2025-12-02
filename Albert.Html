@@ -15,19 +15,38 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <a href="./Home.html" class="nameFlex">
                 <p class="titleName">DESMOND CHEN</p>
                 <p class="subTitle">Product Designer in Vancouver BC</p>
             </a>
 
             <div class="navLinks">
-                <!-- <a>Work</a> -->
-                <a href = "About.html">About</a>
+                <a>Work</a>
+                <a href="About.html">About</a>
                 <a>Resume</a>
             </div>
-        </nav>
 
+            <button class="Sandwich" aria-label="Sandwich Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="mobileLinks">
+
+            <a class="innerLinks" id="NavLinkOne" href="#">
+                <p>01</p>
+                <p>Works</p>
+            </a>
+            <a class="innerLinks" href="About.html">
+                <p>02</p>
+                <p>About</p>
+            </a>
+            <a class="innerLinks" href="#">
+                <p>03</p>
+                <p>Resume</p>
+            </a>
+        </div>
 
     </header>
 
@@ -252,18 +271,18 @@
         </section>
 
         <section class="grayBG projectSection">
-            <div>
-                <h3 class="explainationHeading finalHeaderPadding">Final Product</h3>
-                <div class = "finalAlbertGrid">
-                    <img src = "css/img/AlbertImg/AFinal1.avif" height = "483" width = "363">
-                    <img src = "css/img/AlbertImg/AFinal2.avif" height = "483" width = "363">
-                    <img src = "css/img/AlbertImg/AFinal3.avif" height = "483" width = "363">
-                    <img class = "longFinalAlbert" src = "css/img/AlbertImg/AFinal4.avif" height = "422" width = "1163">
-                    <img src = "css/img/AlbertImg/AFinal5.avif" height = "483" width = "363">
-                    <img src = "css/img/AlbertImg/AFinal6.avif" height = "483" width = "363">
-                    <img src = "css/img/AlbertImg/AFinal7.avif" height = "483" width = "363">
-                </div>
+            <h3 class="explainationHeading finalHeaderPadding">Final Product</h3>
+            <div class = "finalAlbertGrid">
+                <img src = "css/img/AlbertImg/AFinal1.avif" height = "483" width = "363">
+                <img src = "css/img/AlbertImg/AFinal2.avif" height = "483" width = "363">
+                <img src = "css/img/AlbertImg/AFinal3.avif" height = "483" width = "363">
+                <img class = "longFinalAlbert" src = "css/img/AlbertImg/AFinal4.avif" height = "422" width = "1163">
+                <img src = "css/img/AlbertImg/AFinal5.avif" height = "483" width = "363">
+                <img src = "css/img/AlbertImg/AFinal6.avif" height = "483" width = "363">
+                <img src = "css/img/AlbertImg/AFinal7.avif" height = "483" width = "363">
             </div>
+            <h3 class="explainationHeading finalHeaderPadding">Final Reflection</h3>
+            <p>Overall, the product was successful. Plastic bags can be reused and upcycled in this manner, and the process produces very little waste. In the future, I would have added more considerations for the sword itself and how it interacts with the plastics. Because the plastics are non-porous, moisture can build up inside the sheath, so I added silica packs to manage humidity. Additionally, more long-term testing should have been done on the structure of the plastic after repeated use. The tassels shown holding the sword in place in image 4 eventually broke and needed to be replaced with a more durable material.</p>
 
         </section>
 
@@ -273,7 +292,7 @@
         <div class = "footerContact">
             <p >(CONTACT)</p>
             <p class = "footerContactHeader">INTERESTED IN WORKING TOGETHER?</p> 
-            <a href = "" class = "footerContactLink">SEND ME A MESSAGE</a>
+            <a href = "" class = "footerContactLink">SEND ME A MESSAGE <img class = "footerArrow" alt = "link to a sending a message" src = "css/img/icons/LargeArrow.svg" height="40" width ="40"></a>
             <hr>
         </div>
         <!-- Insert Arrow -->
@@ -281,7 +300,7 @@
         <div class="footerGrid"> <!--Insert 7 by grid-->
             <p class="footerTitles">EXTRAS</p>
             <div class="contacts">
-                <p class="footerTitles">Business</p>
+                <p class="footerTitles">BUSINESS</p>
                 <div class="footerFlex">
                     <a>email</a>
                     <a>Linkedin</a>
@@ -289,7 +308,7 @@
                 </div>
             </div>
             <div>
-                <p class="footerTitles">Pages</p>
+                <p class="footerTitles">PAGES</p>
                 <div class="footerFlex">
                     <a>Home</a>
                     <a>Works</a>
@@ -298,7 +317,7 @@
                 </div>
             </div>
             <div>
-                <p class="footerTitles">Credits</p>
+                <p class="footerTitles">CREDITS</p>
                 <div class="footerFlex">
                     <p>Designed by DC</p>
                     <p>Last Updated: 2025</p>

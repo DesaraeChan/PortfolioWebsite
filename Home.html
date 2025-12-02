@@ -10,29 +10,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="css/main.css" rel="stylesheet">
+
+    <script src="dropdown.js" defer></script>
     <!-- <link rel="icon" type="image/x-icon" href="css/imgs/favicon.svg"> -->
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <a href="./Home.html" class="nameFlex">
                 <p class="titleName">DESMOND CHEN</p>
                 <p class="subTitle">Product Designer in Vancouver BC</p>
             </a>
 
             <div class="navLinks">
-                <!-- <a>Work</a> -->
-                <a href = "About.html">About</a>
+                <a>Work</a>
+                <a href="About.html">About</a>
                 <a>Resume</a>
             </div>
-        </nav>
 
+            <button class="Sandwich" aria-label="Sandwich Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="mobileLinks">
+
+            <a class="innerLinks" id="NavLinkOne" href="#">
+                <p>01</p>
+                <p>Works</p>
+            </a>
+            <a class="innerLinks" href="About.html">
+                <p>02</p>
+                <p>About</p>
+            </a>
+            <a class="innerLinks" href="#">
+                <p>03</p>
+                <p>Resume</p>
+            </a>
+        </div>
 
     </header>
 
     <main>
-        <section class="homeSection" id = "antiPadding">
+        <section class="homeSection" id="antiPadding">
             <div class="homeImage">
                 <img src="/css/img/HomeImage.avif" height="800" width="1700">
                 <div class="homeHeader">
@@ -47,8 +68,9 @@
 
         <section class="homeSection">
             <h2 class="featureHeader">Featured Projects</h2>
-            <a href = "Albert.Html" class="featureProject">
-                <img alt = "Plastic grocery bag to sword sheath conversion Project" src="css/img/AlbertFeature.avif" height="615" width="1475">
+            <a href="Albert.Html" class="featureProject">
+                <img alt="Plastic grocery bag to sword sheath conversion Project" src="css/img/AlbertFeature.avif"
+                    height="615" width="1475">
                 <div class="featureContent">
                     <h3>ALBERT SHEATH</h3>
                     <hr>
@@ -66,18 +88,19 @@
     </main>
 
     <footer>
-        <div class = "footerContact">
-            <p >(CONTACT)</p>
-            <p class = "footerContactHeader">INTERESTED IN WORKING TOGETHER?</p> 
-            <a href = "" class = "footerContactLink">SEND ME A MESSAGE</a>
+        <div class="footerContact">
+            <p>(CONTACT)</p>
+            <p class="footerContactHeader">INTERESTED IN WORKING TOGETHER?</p>
+            <a href="" class="footerContactLink">SEND ME A MESSAGE <img class="footerArrow"
+                    alt="link to a sending a message" src="css/img/icons/LargeArrow.svg" height="40" width="40"></a>
             <hr>
         </div>
         <!-- Insert Arrow -->
-        
+
         <div class="footerGrid"> <!--Insert 7 by grid-->
             <p class="footerTitles">EXTRAS</p>
             <div class="contacts">
-                <p class="footerTitles">Buisness</p>
+                <p class="footerTitles">BUSINESS</p>
                 <div class="footerFlex">
                     <a>email</a>
                     <a>Linkedin</a>
@@ -85,7 +108,7 @@
                 </div>
             </div>
             <div>
-                <p class="footerTitles">Pages</p>
+                <p class="footerTitles">PAGES</p>
                 <div class="footerFlex">
                     <a>Home</a>
                     <a>Works</a>
@@ -94,7 +117,7 @@
                 </div>
             </div>
             <div>
-                <p class="footerTitles">Credits</p>
+                <p class="footerTitles">CREDITS</p>
                 <div class="footerFlex">
                     <p>Designed by DC</p>
                     <p>Last Updated: 2025</p>

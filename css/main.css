@@ -134,16 +134,58 @@ figcaption {
 
 
 
-nav {
-    margin-right: 3rem;
-    margin-left: 3rem;
+.navbar {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
     border-style: none none solid none;
     display: flex;
     align-items: baseline;
-    margin-top: 2rem;
+    
     padding-bottom: 1.25rem;
     border-width: 2px;
+}
 
+.navbar.active {
+    background-color: black;
+}
+
+.navbar.active a{
+    color: white;
+}
+
+
+
+.mobileLinks {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+    border-bottom: 2px solid black;
+}
+
+.mobileLinks a{
+    margin-left: 1rem;
+    margin-right: 2rem;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border-style: none none solid none;
+    padding-bottom: 1rem;
+}
+
+.mobileLinks p:nth-child(2){
+    margin-left: auto;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.mobileLinks.active {
+    display: flex;
+    background-color: black;
+    border-style: none none solid none;
+    border-color: white;
 }
 
 
@@ -180,6 +222,49 @@ nav {
     text-decoration: none;
     color: black;
 }
+
+.Sandwich {
+    margin-top: 0.5rem;
+    border: none;
+    background-color: white;
+    display: none;
+    position: relative;
+    height: 1.5rem;
+    width: 2rem;
+    margin-left: auto;
+    margin-right: 1.25rem;
+    cursor: pointer;
+}
+ 
+.Sandwich.active{
+    background-color: black;
+}
+
+.Sandwich span {
+    height: 0.25rem;
+    width: 100%;
+    background-color: #3A3939;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*https://www.w3schools.com/cssref/css3_pr_transform.php for transform property*/
+    transform: translate(-50%, -50%);
+    transition: transform .5s ease;
+}
+
+.Sandwich span:nth-child(1) {
+    top: 25%;
+}
+
+
+.Sandwich span:nth-child(2) {
+    top: 100%;
+}
+
+
+
+
 
 .homeImage {
     position: relative;
@@ -221,11 +306,18 @@ nav {
     position: relative;
     text-decoration: none;
     color: white;
-    width: 80%;
+    max-width: 70rem;
     margin-left: auto;
     margin-right: auto;
-
+    transition: filter 0.3s ease;
 }
+
+/* https://www.w3schools.com/cssref/css3_pr_filter.php */
+.featureProject:hover, .featureProject:focus {
+    filter: brightness(90%);
+}
+
+
 
 .featureProject img {
     max-width: 100%;
@@ -294,7 +386,13 @@ footer {
 
 .footerContactLink {
     display: block;
-    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.footerArrow {
+    margin-left: 1rem;
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 
@@ -811,6 +909,12 @@ footer {
         padding-bottom: 2rem;
     }
 
+    .homeSection {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
     .aboutContentPush {
         margin-left: 2rem;
         margin-right: 2rem;
@@ -901,6 +1005,44 @@ footer {
     }
 }
 
+@media(width < 55rem) {
+    .titleName {
+        font-weight: 500;
+        font-size: 1.5rem;
+        border-style: none solid none none;
+        border-width: 2px;
+        padding-right: 1rem
+    }
+
+    .subTitle {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    .Sandwich {
+        display: block;
+        margin-bottom: auto;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .Sandwich.active span:nth-child(1) {
+        background-color: white;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .Sandwich.active span:nth-child(2) {
+        background-color: white;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+
+}
+
 @media(width < 50rem) {
     .descriptionRoles {
         display: grid;
@@ -936,16 +1078,82 @@ footer {
     }
 
     .finalAlbertGrid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 1rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .footerGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .contacts {
+        grid-column-start: 3;
+    }
+
+    .footerContact {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
+@media(width<45rem) {
+    .featureContent {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(width<40rem) {
+    .titleName {
+        border-style: none none none none;
+
+    }
+
+    .subTitle {
+        display: none;
+    }
+
+    .featureContent h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .projectDetails {
+        flex-direction: column;
+    }
+
+    .projectType {
+        margin-left: 0;
+    }
+
+    .featureContent {
+
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+
+    }
 }
 
 @media(width < 30rem) {
+
+    .footerGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+
     .descriptionRoles {
         display: grid;
         grid-template-columns: 1fr;
@@ -966,11 +1174,42 @@ footer {
 
     }
 
+    .assemblyCont {
+        flex-direction: column;
+    }
+
+    .assemblyCont img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        object-fit: cover;
+    }
+
+    .assemblyCont p {
+        margin: 0;
+        margin-top: 1rem;
+        text-align: left;
+        width: 100%;
+    }
+
+
     .finalAlbertGrid {
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    grid-template-rows: auto;
-    gap: 1rem;
-}
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .footerContactHeader,
+    .footerContactLink {
+        font-size: 2rem;
+    }
+
+    .footerArrow {
+        margin-left: 1rem;
+        width: 1.75rem;
+        height: 1.75rem;
+    }
 }
