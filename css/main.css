@@ -80,13 +80,13 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #FDFAF6;
 }
 
 .homeSection,
 .aboutSection {
     margin-left: 3rem;
     margin-right: 3rem;
-    border-style: none none solid none;
     border-width: 2px;
     padding-bottom: 2rem;
     margin-bottom: 0;
@@ -138,11 +138,11 @@ figcaption {
     padding-right: 3rem;
     padding-left: 3rem;
     padding-top: 2rem;
-    border-style: none none solid none;
-    display: flex;
-    align-items: baseline;
+    padding-bottom: 2rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
     
-    padding-bottom: 1.25rem;
     border-width: 2px;
 }
 
@@ -189,13 +189,20 @@ figcaption {
 }
 
 
-.nameFlex {
-    display: flex;
-    gap: 1rem;
-    align-items: baseline;
+.homeIcon {
     text-decoration: none;
     color: black;
+    background-color: #EDEDED;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
 
+.homeIcon img{
+    width: auto;
+    max-height: 3rem;
+    display: block;
 }
 
 .titleName {
@@ -211,16 +218,19 @@ figcaption {
 }
 
 .navLinks {
+    background-color: #EAEAEA;
     font-family: "Aeonik";
-    margin-left: auto;
     display: flex;
-    gap: 2rem;
-
+    gap: 3rem;
+    width:fit-content;
+    padding: 1rem 1.75rem;
+    border-radius: 1rem;
 }
 
 .navLinks a {
     text-decoration: none;
     color: black;
+    
 }
 
 .Sandwich {
@@ -263,35 +273,44 @@ figcaption {
 }
 
 
-
-
-
-.homeImage {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-}
-
-.homeImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .homeHeader {
-    position: absolute;
-    left: 2rem;
-    bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-style: none none solid none;
+    border-width: 2px;
 }
 
 .homeHeader h1 {
     font-family: "Aeonik";
-    color: white;
+    color: black;
     font-weight: 400;
     font-size: 3.75rem;
-    padding: 0;
+    padding-bottom: 0.25rem;
     margin: 0rem;
+}
+
+.subInfoText{
+    font-size: 1rem;
+    font-family: "Berka";
+}
+
+.subInfoGrid{
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subInfoSplit{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.subInfoSplit p:nth-child(2){
+    text-align: center;
+}
+
+.subInfoSplit p:nth-child(3){
+    text-align: right;
 }
 
 .featureHeader {
