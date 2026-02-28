@@ -313,6 +313,56 @@ figcaption {
     text-align: right;
 }
 
+.CTAContainer{
+    margin-top: 2rem;
+    background-color: #0E5935;
+    height: 55vh;
+    border-radius: 2rem;
+}
+
+.CTAGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.CTAInfo{
+    color: #FDFAF6;
+    position:relative;
+}
+
+.CTAIndust, .CTABased{
+    font-size: 1.25rem;
+    position: absolute;
+}
+
+.CTAIndust{
+    top: 8%;
+}
+
+.CTABased{
+    bottom: 8%;
+}
+
+.CTABig{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    height: fit-content;
+}
+
+.CTABig p{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 120%;
+    
+}
+
+#swapText{
+    font-style: italic;
+    display: inline-block;
+}
+
 .featureHeader {
     text-align: center;
     margin-bottom: 4rem;
@@ -1231,4 +1281,30 @@ footer {
         width: 1.75rem;
         height: 1.75rem;
     }
+}
+
+.animate-swap {
+  animation: textSwap 0.5s forwards;
+}
+
+@keyframes textSwap {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  51% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
