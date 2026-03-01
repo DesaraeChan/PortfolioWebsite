@@ -16,7 +16,7 @@ setTimeout(() => {
 }, animationDuration / 2);
 }
 
-setInterval(changeText, 1800); 
+setInterval(changeText, 1500); 
 
 function updateTime() {
   const timeElement = document.querySelector('.time');
