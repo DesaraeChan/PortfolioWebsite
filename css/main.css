@@ -371,27 +371,87 @@ figcaption {
 
 .featureHeader {
     margin-bottom: 4rem;
+    padding-bottom: 0.75rem;
     margin-top: 4rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid black;
+}
+
+.featureGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .featureProject {
+    position: relative;
+    text-decoration: none;
+    border-radius: 2rem;
+    background-color: #D5D7D9;
+}
+
+#featureBishop, #featureKing, #featureKnight, #featurePawn{
+    position: absolute;
+    transform: translateY(-100%);
+    scale: 0.49;
+}
+
+#featureBishop{
+    top: 35%;
+    right: 7%;
+}
+
+#featureKnight{
+    top: 45%;
+    right: 17%;
+}
+
+#featureKing{
+    top: 80%;
+    right: -1%;
+}
+
+#featurePawn{
+    right: -13%;
+    top: 50%;
+}
+
+#dubanFeature{
     display: block;
     position: relative;
     text-decoration: none;
-    color: white;
-    max-width: 70rem;
-    margin-left: auto;
-    margin-right: auto;
-    transition: filter 0.3s ease;
+    background-color:#EEE9E2;
+    color:black;
+    padding: 4rem 3.5rem;
+    border-radius: 2rem;
+    width: 100%;
+    overflow: hidden;
 }
 
-/* https://www.w3schools.com/cssref/css3_pr_filter.php */
-.featureProject:hover, .featureProject:focus {
-    filter: brightness(90%);
+#dubanFeature h3{
+    font-size: 2.75rem;
+    font-weight: 400;
+    margin: 0;
 }
 
+.featureKeywordFlex{
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
 
+.featureKeywordFlex p{
+    background-color: #DCD9D4;
+    width: fit-content;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+}
+
+.featureText{
+    font-size: 1.75rem;
+    width: 30%;
+}
 
 .featureProject img {
     max-width: 100%;
@@ -400,39 +460,8 @@ figcaption {
 
 }
 
-
-.featureContent {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    color: white;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 2rem;
-}
-
-.featureContent hr {
-    color: white;
-}
-
 hr {
     stroke-width: 1px;
-}
-
-.featureContent h3 {
-    font-size: 1.5rem;
-    font-family: "Aeonik";
-    font-weight: 700;
-}
-
-.projectDetails {
-    display: flex;
-    font-family: "Aeonik";
-}
-
-.projectType {
-    margin-left: auto;
 }
 
 footer {
@@ -750,8 +779,6 @@ footer {
     width: 50%;
     height: auto;
 }
-
-/* https://css-tricks.com/list-style-recipes/ */
 
 .circleList {
     font-family: "Aeonik";
