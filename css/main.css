@@ -142,7 +142,7 @@ figcaption {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    
+
     border-width: 2px;
 }
 
@@ -150,7 +150,7 @@ figcaption {
     background-color: black;
 }
 
-.navbar.active a{
+.navbar.active a {
     color: white;
 }
 
@@ -165,7 +165,7 @@ figcaption {
     border-bottom: 2px solid black;
 }
 
-.mobileLinks a{
+.mobileLinks a {
     margin-left: 1rem;
     margin-right: 2rem;
     display: flex;
@@ -175,7 +175,7 @@ figcaption {
     padding-bottom: 1rem;
 }
 
-.mobileLinks p:nth-child(2){
+.mobileLinks p:nth-child(2) {
     margin-left: auto;
     font-size: 2.5rem;
     line-height: 1;
@@ -199,7 +199,7 @@ figcaption {
     height: fit-content;
 }
 
-.homeIcon img{
+.homeIcon img {
     width: auto;
     max-height: 3rem;
     display: block;
@@ -239,7 +239,8 @@ figcaption {
 /* segmented hover */
 .navLinks a:hover,
 .navLinks a:focus {
-    background-color: #e0e0e0; /* slightly darker than navbar */
+    background-color: #e0e0e0;
+    /* slightly darker than navbar */
     padding-left: 1.6rem;
 }
 
@@ -274,11 +275,10 @@ figcaption {
     height: 1.5rem;
     width: 2rem;
     margin-left: auto;
-    margin-right: 1.25rem;
     cursor: pointer;
 }
- 
-.Sandwich.active{
+
+.Sandwich.active {
     background-color: black;
 }
 
@@ -321,84 +321,89 @@ figcaption {
     margin: 0rem;
 }
 
-.subInfoText{
+.subInfoText {
     font-size: 1rem;
     font-family: "Berka";
 }
 
-.subInfoGrid{
+.subInfoGrid {
     margin-top: 0.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.subInfoSplit{
+.subInfoSplit {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.subInfoSplit p:nth-child(2){
+.subInfoSplit p:nth-child(2) {
     text-align: center;
 }
 
-.subInfoSplit p:nth-child(3){
+.subInfoSplit p:nth-child(3) {
     text-align: right;
 }
 
-.CTAContainer{
+.CTAContainer {
     margin-top: 2rem;
     background-color: #0E5935;
     height: 55vh;
     border-radius: 2rem;
 }
 
-.CTAGrid{
+.CTAGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
 }
 
-.CTAInfo{
+.CTAInfo {
     color: #FDFAF6;
-    position:relative;
+    position: relative;
 }
 
-.CTAIndust, .CTABased{
+.CTAIndust,
+.CTABased {
     font-size: 1.25rem;
     position: absolute;
 }
 
-.CTAIndust{
+.CTAIndust {
     top: 8%;
 }
 
-.CTABased{
+.CTABased {
     bottom: 8%;
 }
 
-.CTABig{
+.CTABig {
     position: absolute;
     top: 50%;
     transform: translateY(-100%);
     height: fit-content;
 }
 
-.CTABig p{
+.CTABig p {
     font-size: 3.25rem;
     font-weight: 400;
     line-height: 120%;
-    
+
 }
 
-#swapText{
+#swapText {
     font-style: italic;
     display: inline-block;
 }
 
 #gravity-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 .featureHeader {
@@ -409,7 +414,7 @@ figcaption {
     border-bottom: 2px solid black;
 }
 
-.featureGrid{
+.featureGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -417,7 +422,10 @@ figcaption {
 }
 
 
-#featureBishop, #featureKing, #featureKnight, #featurePawn{
+#featureBishop,
+#featureKing,
+#featureKnight,
+#featurePawn {
     position: absolute;
     transform: translateY(-100%);
     scale: 0.49;
@@ -431,65 +439,66 @@ figcaption {
 .featureProject:focus #featureBishop,
 .featureProject:focus #featureKing,
 .featureProject:focus #featureKnight,
-.featureProject:focus #featurePawn{
+.featureProject:focus #featurePawn {
     scale: 0.53;
 }
 
-#featureBishop{
+#featureBishop {
     top: 35%;
     right: 7%;
 }
 
-#featureKnight{
+#featureKnight {
     top: 45%;
     right: 17%;
 }
 
-#featureKing{
+#featureKing {
     top: 80%;
     right: -1%;
 }
 
-#featurePawn{
+#featurePawn {
     right: -13%;
     top: 50%;
 }
 
-#dubanFeature{
-    background-color:#EEE9E2;
+#dubanFeature {
+    background-color: #EEE9E2;
 }
 
-#albertFeature{
-    background-color:#D5D7D9;
+#albertFeature {
+    background-color: #D5D7D9;
 }
 
-#finalTransmissionFeature{
+#finalTransmissionFeature {
     background-color: #070707;
     color: white;
 }
 
-#albertFeature, #finalTransmissionFeature{
+#albertFeature,
+#finalTransmissionFeature {
     min-height: 36rem;
 }
 
-.featureProject{
+.featureProject {
     display: block;
     position: relative;
     text-decoration: none;
-    color:black;
+    color: black;
     padding: 4rem 3.5rem;
     border-radius: 2rem;
     width: 100%;
     overflow: hidden;
 }
 
-.titleFeature{
+.titleFeature {
     font-size: 2.75rem;
     font-weight: 400;
     margin: 0;
 }
 
-#albertFeatureImg{
+#albertFeatureImg {
     position: absolute;
     left: -2rem;
     bottom: 5rem;
@@ -498,47 +507,47 @@ figcaption {
     transition: scale 0.5s ease-in-out;
 }
 
-.featureProject:hover #albertFeatureImg{
+.featureProject:hover #albertFeatureImg {
     scale: 1.35
 }
 
-#finalFeatureImg{
+#finalFeatureImg {
     position: absolute;
     z-index: 0;
-    left:1.25rem;
+    left: 1.25rem;
     bottom: -3rem;
     scale: 1.15;
     transition: scale 0.5s ease-in-out;
 }
 
-.featureProject:hover #finalFeatureImg{
+.featureProject:hover #finalFeatureImg {
     scale: 1.25
 }
 
-.featureKeywordFlex{
+.featureKeywordFlex {
     display: flex;
     gap: 1rem;
     margin: 1.5rem 0;
-    
+
 }
 
-.featureKeywordFlex p{
+.featureKeywordFlex p {
     background-color: #DCD9D4;
     width: fit-content;
     padding: 0.75rem;
     border-radius: 0.75rem;
-    
+
 }
 
-#albertKeyword p{
-    background-color:#C7C9CC;
+#albertKeyword p {
+    background-color: #C7C9CC;
 }
 
-#finalTransKeyword p{
+#finalTransKeyword p {
     background-color: #464545;
 }
 
-.featureText{
+.featureText {
     font-size: 1.75rem;
     max-width: 30rem;
     z-index: 2;
@@ -553,7 +562,7 @@ figcaption {
 
 .titleFeature,
 .featureKeywordFlex,
-.featureText{
+.featureText {
     position: relative;
     z-index: 2;
 }
@@ -635,7 +644,7 @@ footer {
     margin-bottom: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
 }
 
 .aboutText img {
@@ -665,7 +674,7 @@ footer {
 .aboutFlex {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
 }
 
 .aboutFlex h2 {
@@ -725,78 +734,88 @@ footer {
 
 /* Case Study */
 
-.caseContainer {
-    position: relative;
+.onTopOfCase {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.caseContainer img {
+.caseContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 8rem;
+    padding: 3rem 3rem;
+    background-color: #F5F0EA;
+    border-radius: 2rem;
+}
+
+.caseImg {
     width: 100%;
-    height: 45rem;
+    height: 40rem;
     object-fit: cover;
     display: block;
+    object-position: 50% 30%;
+
 }
 
 .caseTitle {
-
-    color: white;
-    position: absolute;
-    bottom: 3rem;
-    left: 4rem;
-
-}
-
-.caseTitle h1 {
     font-weight: 400;
     font-size: 5rem;
     margin: 0;
     padding: 0;
 }
 
-.caseTitle p {
-    font-weight: 300;
-    font-size: 2rem;
-    max-width: 35rem;
-    font-style: italic;
-    margin: 0;
-    padding: 0;
-}
-
 .projectSection {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     padding-bottom: 3rem;
 }
 
+.darkGrayBG {
+    background-color: #221F1B;
+}
+
 .grayBG {
-    background-color: #221f1b;
-    color: white;
+    background-color: #EEE9E2;
 }
 
 .lightGrayBG {
-    background-color: #FAFAFA;
+    background-color: #F5F0EA;
     padding: 3rem;
     border-radius: 1.5rem;
     margin-bottom: 2rem;
 }
 
+.caseMeImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: auto;
+}
+
 .descriptionSubhead {
     margin: 0;
     padding: 0;
-    padding-top: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
 
 }
 
 .descriptionRoles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
+    gap: 1rem;
 }
 
 .descriptionHeader {
     margin-top: 0.75rem;
     font-size: 1.5rem;
-    margin-bottom: 0;
-    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-weight: 400;
 }
 
 .descriptionParagraph {
@@ -806,10 +825,9 @@ footer {
     line-height: 1.5;
 }
 
-.descriptionHeader,
-.descriptionParagraph,
-.descriptionRoles {
-    max-width: 56rem;
+.whyStatementHead {
+    font-weight: 400;
+    font-size: 1.75rem;
 }
 
 .roleTitles {
@@ -820,30 +838,67 @@ footer {
 
 }
 
-.explainationHeading {
+.albertResearch {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    max-width: 50%;
+}
+
+.explanationHeading {
     font-family: "Aeonik";
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5;
     margin-top: 1rem;
     margin-bottom: 2rem;
+
 }
 
-.albertResearchFlex {
-    display: flex;
-    gap: 3rem;
-    margin-top: 4rem;
+.textCenter {
+    text-align: center;
+}
+
+.lessBottomMargin {
+    margin-bottom: 0.5rem;
+}
+
+.heatPadding {
+    padding: 2rem
+}
+
+.heatSpacer {
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
+.shrink {
+    max-width: 45%;
+}
+
+.borderCurve {
+    border: #070707 0.1rem solid;
+    border-radius: 2rem;
+}
+
+.alignItemTop {
+    vertical-align: top;
+}
+
+.explanationFlex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.subExplanationHeading {
+    font-style: italic;
+    font-size: 1.2rem;
+}
 
 .albertTassen {
     width: 100%;
     height: auto;
-}
-
-.shrink {
-    max-width: 56rem;
+    border-radius: 3rem;
 }
 
 .heatingGrid {
@@ -853,7 +908,8 @@ footer {
 }
 
 .heatHeading {
-    font-weight: 700;
+    text-align: center;
+    font-weight: 500;
     font-size: 1.15rem;
 }
 
@@ -868,53 +924,47 @@ footer {
 
 }
 
-.connectionFlex {
-    display: flex;
-    gap: 3rem;
+.connectionGrid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
     padding: 2rem;
-    align-items: center;
+    align-items: start;
 }
 
 .connectionImage {
-    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     height: auto;
+    padding: 2rem 4rem;
 }
 
-.circleList {
-    font-family: "Aeonik";
-    font-weight: 700;
-    font-size: 1.1rem;
-    list-style: none;
-    counter-reset: Counter;
+.planningSubHeader {
+    color: #686868;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.planningHeader {
+    font-size: 2.2rem;
+    font-weight: 400;
+    max-width: 25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.planningDescription {
+    max-width: 30rem;
+}
+
+.planningGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem;
+    align-items: end;
     margin-bottom: 2rem;
-    padding: 0;
-}
-
-.circleList li {
-    counter-increment: Counter;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-
-
-}
-
-.circleList li::before {
-    content: counter(Counter);
-    margin-right: 0.5rem;
-    background: #00BFFF;
-    color: white;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 1rem;
-    display: inline-grid;
-    place-items: center;
-    line-height: 2rem;
-    flex-shrink: 0;
 }
 
 .sheathPattern {
@@ -959,16 +1009,17 @@ footer {
     font-size: 3rem;
 }
 
-.errorFlex {
+.errorGrid {
     padding: 2rem;
     padding-top: 1rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     padding-bottom: 4rem;
 }
 
-.errorFlex img {
-    width: 60%;
+.errorGrid img {
+    width: 100%;
     height: auto;
 }
 
@@ -1063,17 +1114,65 @@ footer {
     object-fit: cover;
 }
 
+.whiteText {
+    color: white;
+}
+
 /* https://www.w3schools.com/cssref/pr_grid-column.php */
 .longFinalAlbert {
     grid-column: 1/4;
 }
 
-@media(width < 74rem) {
-    .errorFlex {
-        flex-direction: column;
+@media(width < 78rem) {
+
+    #featureBishop,
+    #featureKing,
+    #featureKnight,
+    #featurePawn {
+
+        scale: 0.35;
     }
 
-    .errorFlex img {
+    .featureProject:hover #featureBishop,
+    .featureProject:hover #featureKing,
+    .featureProject:hover #featureKnight,
+    .featureProject:hover #featurePawn,
+    .featureProject:focus #featureBishop,
+    .featureProject:focus #featureKing,
+    .featureProject:focus #featureKnight,
+    .featureProject:focus #featurePawn {
+        scale: 0.39;
+    }
+
+    #featureBishop {
+        top: 0%;
+        right: -4%;
+    }
+
+    #featureKnight {
+        top: 15%;
+        right: 0%;
+    }
+
+    #featureKing {
+        top: 50%;
+        right: -14%;
+    }
+
+    #featurePawn {
+        top: 20%;
+        right: -20%;
+        
+    }
+}
+
+@media(width < 74rem) {
+    .errorGrid {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .errorGrid img {
         width: 100%;
         height: auto;
         order: 1;
@@ -1111,16 +1210,64 @@ footer {
     }
 
     .homeSection {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .navbar{
+        padding-left: 2rem;
+        padding-right: 2.5rem;
     }
 
     .aboutText {
-       
+
         margin-top: 2rem;
         margin-bottom: 0rem;
         gap: 1rem;
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+     #featureBishop,
+    #featureKing,
+    #featureKnight,
+    #featurePawn {
+
+        scale: 0.35;
+    }
+
+    .featureProject:hover #featureBishop,
+    .featureProject:hover #featureKing,
+    .featureProject:hover #featureKnight,
+    .featureProject:hover #featurePawn,
+    .featureProject:focus #featureBishop,
+    .featureProject:focus #featureKing,
+    .featureProject:focus #featureKnight,
+    .featureProject:focus #featurePawn {
+        scale: 0.39;
+    }
+
+    #featureBishop {
+        top: 0%;
+        right: -4%;
+    }
+
+    #featureKnight {
+        top: 15%;
+        right: 0%;
+    }
+
+    #featureKing {
+        top: 50%;
+        right: -14%;
+    }
+
+    #featurePawn {
+     display: none;
+    }
+
+    .featureGrid{
+        grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
     }
 
@@ -1237,7 +1384,42 @@ footer {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 
+    .homeHeader h1{
+        font-size: 3rem;
+    }
 
+    .homeHeader h1:nth-child(2){
+        margin-left: auto;
+    }
+
+    .CTAGrid{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .CTAIndust {
+    top: 8%;
+    left: 5%;
+}
+
+.CTABased {
+    bottom: 8%;
+    left: 5%;
+}
+
+    .CTABig {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    transform: translateY(-100%);
+    height: fit-content;
+}
+
+.CTABig p {
+    font-size: 2.75rem;
+
+
+}
 }
 
 @media(width < 50rem) {
@@ -1409,30 +1591,41 @@ footer {
         width: 1.75rem;
         height: 1.75rem;
     }
+
+    .homeSection {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .navbar{
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+    }
+
 }
 
 .animate-swap {
-  animation: textSwap 0.5s forwards;
+    animation: textSwap 0.5s forwards;
 }
 
 @keyframes textSwap {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
-  50% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
+    50% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
 
-  51% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
+    51% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
